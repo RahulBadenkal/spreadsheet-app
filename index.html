@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>handsontable Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/handsontable@5.0.2/dist/handsontable.full.min.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handsontable/5.0.2/handsontable.full.min.js"></script>
+    <script src="../../../node_modules/hot-formula-parser/dist/formula-parser.min.js"></script>
+</head>
+
+<body ng-app="spreadsheet-app">
+
+    <div ng-controller="MainCtrl as ctrl" id="1">
+        <button  ng-click=ctrl.change($event) id="bold" class="toolbar-button-inactive">Bold</button>
+        <button  ng-click=ctrl.change($event) id="italic" class="toolbar-button-inactive">Italic</button>
+        <button  ng-click=ctrl.change($event) id="underline" class="toolbar-button-inactive">Underline</button>
+        <button  ng-click=ctrl.change($event) id="textAlignLeft" class="toolbar-button-inactive">Align Left</button>
+        <button  ng-click=ctrl.change($event) id="textAlignCenter" class="toolbar-button-inactive">Center Horizontally</button>
+        <button  ng-click=ctrl.change($event) id="textAlignRight" class="toolbar-button-inactive">Align Right</button>
+        <button  ng-click=ctrl.change($event) id="verticalAlignTop" class="toolbar-button-inactive">Align Top</button>
+        <button  ng-click=ctrl.change($event) id="verticalAlignCenter" class="toolbar-button-inactive">Center Vertically</button>
+        <button  ng-click=ctrl.change($event) id="verticalAlignRight" class="toolbar-button-inactive">Align Bottom</button>
+
+        <div>The below div element contains the spreadsheet{{ctrl.myVar}}</div>
+        <div id="example"></div>
+        <!--app specific code is included in the body (after the concerned div) and not in the head, To understand the reason
+            See : 'https://stackoverflow.com/questions/36624007/javascript-handsontable-uncaught-typeerror-cannot-read-property-insertbefore'
+        -->
+        <script  type="text/javascript" src="./app.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+1. PRIORITY: Low
+   ISSUE:
+   After Selection of multiple cells, deselection of few cells is not happening
+   POSSIBLE FIX:
+   We could check if any cell is present in the selected array even or odd times. If present even times, then deselected(ignore)
+   else if present odd time, then selected. (Try do do it in an efficient manner) 
+   
+2. Priority: Low
+   Issue:
+   Undo/Redo for styles not present at the moment
+   Possible Fix:
+
+3. Priority: Medium
+   Issue: 
+   Input type toolbar options: ['fontName', 'fontSize', 'fontColour', 'backgroundColour'] to be added.
+   Possible Fix:
+   

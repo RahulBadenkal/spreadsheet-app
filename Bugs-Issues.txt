@@ -1,0 +1,12 @@
+1. Priority: High
+   Issue:
+   While using customRenderer, Undo/Redo doesn't work when whole row/column is selected and deleted. Whereas when default renderer is 
+   used the Undo/Redo works even when whole row/column is selected and deleted.
+   Possible Fix:
+
+2. Priority: High
+   Issue:
+   Thorough Testing of formats required. Check the buttons styling change, font application on cells, speed in case of large data
+   (100,000X30)
+   Possible Fix:
+   
